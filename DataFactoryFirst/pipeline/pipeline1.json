@@ -243,7 +243,17 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"storedProcedureName": "[dbo].[uspUpdateBlobMetadata]"
+								"storedProcedureName": "[dbo].[uspUpdateBlobMetadata]",
+								"storedProcedureParameters": {
+									"dlsLocation": {
+										"value": "",
+										"type": "String"
+									},
+									"recordId": {
+										"value": "{item().RecordId}",
+										"type": "Int32"
+									}
+								}
 							},
 							"linkedServiceName": {
 								"referenceName": "AzureSqlDatabase",
