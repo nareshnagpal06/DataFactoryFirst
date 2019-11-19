@@ -25,6 +25,24 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "ForeachItem",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Lookup",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": []
+			},
+			{
+				"name": "blobPath",
+				"type": "SetVariable",
+				"dependsOn": []
 			}
 		],
 		"annotations": []
