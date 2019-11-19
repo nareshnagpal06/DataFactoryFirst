@@ -43,17 +43,15 @@
 						"value": "@activity('Lookup').output.value",
 						"type": "Expression"
 					},
-					"isSequential": true
-				}
-			},
-			{
-				"name": "Set variable1",
-				"type": "SetVariable",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "blobPath",
-					"value": ""
+					"isSequential": true,
+					"activities": [
+						{
+							"name": "Set variable2",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": []
+						}
+					]
 				}
 			}
 		],
