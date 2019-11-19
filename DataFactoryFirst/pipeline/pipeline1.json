@@ -52,7 +52,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "blobPath",
-								"value": "@{item().Path}"
+								"value": {
+									"value": "@{item().Path}",
+									"type": "Expression"
+								}
 							}
 						},
 						{
@@ -62,7 +65,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "blobName",
-								"value": "@{item().BlobName}"
+								"value": {
+									"value": "@{item().BlobName}",
+									"type": "Expression"
+								}
 							}
 						},
 						{
@@ -85,7 +91,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "container",
-								"value": "@substring(item().Path, 0, indexof(item().Path, item().BlobName))"
+								"value": {
+									"value": "@substring(item().Path, 0, indexof(item().Path, item().BlobName))",
+									"type": "Expression"
+								}
 							}
 						},
 						{
@@ -250,7 +259,7 @@
 										"type": "String"
 									},
 									"recordId": {
-										"value": "{item().RecordId}",
+										"value": "@{item().RecordId}",
 										"type": "Int32"
 									}
 								}
