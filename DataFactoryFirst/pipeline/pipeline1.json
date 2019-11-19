@@ -40,6 +40,11 @@
 				"userProperties": []
 			}
 		],
+		"variables": {
+			"blobPath": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
