@@ -38,6 +38,16 @@
 					}
 				],
 				"userProperties": []
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "blobPath",
+					"value": ""
+				}
 			}
 		],
 		"variables": {
