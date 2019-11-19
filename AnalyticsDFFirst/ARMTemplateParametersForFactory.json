@@ -5,11 +5,20 @@
 		"factoryName": {
 			"value": "AnalyticsDFFirst"
 		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+			"value": "blobConn"
+		},
+		"AzureDWH_properties_typeProperties_connectionString_secretName": {
+			"value": "DWHConn"
+		},
 		"AzureKeyVault_properties_typeProperties_baseUrl": {
 			"value": "https://AnalyticsKeyValut.vault.azure.net/"
 		},
 		"AzureSqlDatabase_properties_typeProperties_connectionString_secretName": {
 			"value": "SQLConn"
+		},
+		"AzureSynapseAnalytics1_properties_typeProperties_connectionString_secretName": {
+			"value": "DWHConn"
 		}
 	}
 }

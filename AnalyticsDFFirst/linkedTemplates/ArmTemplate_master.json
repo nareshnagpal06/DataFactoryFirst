@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "AnalyticsDFFirst"
 		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "blobConn"
+		},
+		"AzureDWH_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "DWHConn"
+		},
 		"AzureKeyVault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://AnalyticsKeyValut.vault.azure.net/"
@@ -14,6 +22,10 @@
 		"AzureSqlDatabase_properties_typeProperties_connectionString_secretName": {
 			"type": "string",
 			"defaultValue": "SQLConn"
+		},
+		"AzureSynapseAnalytics1_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "DWHConn"
 		},
 		"containerUri": {
 			"type": "string",
@@ -45,8 +57,17 @@
 					"AzureKeyVault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault_properties_typeProperties_baseUrl')]"
 					},
+					"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('AzureBlobStorage1_properties_typeProperties_connectionString_secretName')]"
+					},
+					"AzureDWH_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('AzureDWH_properties_typeProperties_connectionString_secretName')]"
+					},
 					"AzureSqlDatabase_properties_typeProperties_connectionString_secretName": {
 						"value": "[parameters('AzureSqlDatabase_properties_typeProperties_connectionString_secretName')]"
+					},
+					"AzureSynapseAnalytics1_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('AzureSynapseAnalytics1_properties_typeProperties_connectionString_secretName')]"
 					}
 				}
 			},
