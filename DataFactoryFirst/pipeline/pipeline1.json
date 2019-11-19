@@ -46,10 +46,14 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "Set variable2",
+							"name": "Set Blob path",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "blobPath",
+								"value": "@{item().Path}"
+							}
 						}
 					]
 				}
@@ -57,6 +61,9 @@
 		],
 		"variables": {
 			"blobPath": {
+				"type": "String"
+			},
+			"blobName": {
 				"type": "String"
 			}
 		},
