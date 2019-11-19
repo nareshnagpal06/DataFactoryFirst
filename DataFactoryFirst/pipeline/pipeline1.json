@@ -38,11 +38,6 @@
 					}
 				],
 				"userProperties": []
-			},
-			{
-				"name": "blobPath",
-				"type": "SetVariable",
-				"dependsOn": []
 			}
 		],
 		"annotations": []
