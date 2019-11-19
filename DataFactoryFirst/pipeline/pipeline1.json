@@ -54,6 +54,39 @@
 								"variableName": "blobPath",
 								"value": "@{item().Path}"
 							}
+						},
+						{
+							"name": "Set blobName",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "blobName",
+								"value": "@{item().BlobName}"
+							}
+						},
+						{
+							"name": "Set Container",
+							"type": "SetVariable",
+							"dependsOn": [
+								{
+									"activity": "Set Blob path",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								},
+								{
+									"activity": "Set blobName",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "container",
+								"value": "@substring(item().Path, 0, indexof(item().Path, item().BlobName))"
+							}
 						}
 					]
 				}
@@ -64,6 +97,9 @@
 				"type": "String"
 			},
 			"blobName": {
+				"type": "String"
+			},
+			"container": {
 				"type": "String"
 			}
 		},
