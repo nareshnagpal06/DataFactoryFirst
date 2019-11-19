@@ -246,7 +246,7 @@
 								"storedProcedureName": "[dbo].[uspUpdateBlobMetadata]",
 								"storedProcedureParameters": {
 									"dlsLocation": {
-										"value": "",
+										"value": null,
 										"type": "String"
 									},
 									"recordId": {
