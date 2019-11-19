@@ -125,7 +125,79 @@
 								},
 								"enableStaging": false,
 								"translator": {
-									"type": "TabularTranslator"
+									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"name": "Region",
+												"type": "String"
+											},
+											"sink": {
+												"name": "Region",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "Plant",
+												"type": "String"
+											},
+											"sink": {
+												"name": "Plant",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "DeviceId",
+												"type": "String"
+											},
+											"sink": {
+												"name": "DeviceId",
+												"type": "Int32"
+											}
+										},
+										{
+											"source": {
+												"name": "Temperature",
+												"type": "String"
+											},
+											"sink": {
+												"name": "Temperature",
+												"type": "Int32"
+											}
+										},
+										{
+											"source": {
+												"name": "TemperatureDescription",
+												"type": "String"
+											},
+											"sink": {
+												"name": "TemperatureDescription",
+												"type": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "Humidity",
+												"type": "String"
+											},
+											"sink": {
+												"name": "Humidity",
+												"type": "Int32"
+											}
+										},
+										{
+											"source": {
+												"name": "RecordedTime",
+												"type": "String"
+											},
+											"sink": {
+												"name": "RecordedTime",
+												"type": "DateTime"
+											}
+										}
+									]
 								}
 							},
 							"inputs": [
