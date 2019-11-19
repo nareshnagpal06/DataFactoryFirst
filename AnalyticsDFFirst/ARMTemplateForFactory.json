@@ -297,7 +297,10 @@
 												"type": "String"
 											},
 											"recordId": {
-												"value": "{item().RecordId}",
+												"value": {
+													"value": "@{item().RecordId}",
+													"type": "Expression"
+												},
 												"type": "Int32"
 											}
 										}
